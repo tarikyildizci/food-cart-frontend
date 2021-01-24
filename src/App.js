@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import { LoginPage, SignUpPage, Home, Restaurant, Cart } from './pages';
+
+import IfUserThenRedirect from './components/PrivateRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <IfUserThenRedirect exact path="/login">
+          <LoginPage />
+        </IfUserThenRedirect>
+        <IfUserThenRedirect exact path="/signup">
+          <SignUpPage />
+        </IfUserThenRedirect>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/cart">
+          <Cart />
+        </Route>
+        <Route exact path="/:restaurant">
+          <Restaurant />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
