@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/food-cart-react/static/css/main.bdd93240.chunk.css",
+    "main.js": "/food-cart-react/static/js/main.5c5635c7.chunk.js",
+    "main.js.map": "/food-cart-react/static/js/main.5c5635c7.chunk.js.map",
+    "runtime-main.js": "/food-cart-react/static/js/runtime-main.9951707d.js",
+    "runtime-main.js.map": "/food-cart-react/static/js/runtime-main.9951707d.js.map",
+    "static/js/2.f9ac0c5f.chunk.js": "/food-cart-react/static/js/2.f9ac0c5f.chunk.js",
+    "static/js/2.f9ac0c5f.chunk.js.map": "/food-cart-react/static/js/2.f9ac0c5f.chunk.js.map",
+    "index.html": "/food-cart-react/index.html",
+    "static/css/main.bdd93240.chunk.css.map": "/food-cart-react/static/css/main.bdd93240.chunk.css.map",
+    "static/js/2.f9ac0c5f.chunk.js.LICENSE.txt": "/food-cart-react/static/js/2.f9ac0c5f.chunk.js.LICENSE.txt",
+    "static/media/hamburger.47314fc4.jpg": "/food-cart-react/static/media/hamburger.47314fc4.jpg",
+    "static/media/undraw.8b8e2c53.svg": "/food-cart-react/static/media/undraw.8b8e2c53.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9951707d.js",
+    "static/js/2.f9ac0c5f.chunk.js",
+    "static/css/main.bdd93240.chunk.css",
+    "static/js/main.5c5635c7.chunk.js"
+  ]
+}
