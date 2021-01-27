@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/food-cart-frontend/static/css/main.bdd93240.chunk.css",
-    "main.js": "/food-cart-frontend/static/js/main.02d906b3.chunk.js",
-    "main.js.map": "/food-cart-frontend/static/js/main.02d906b3.chunk.js.map",
+    "main.js": "/food-cart-frontend/static/js/main.40225ada.chunk.js",
+    "main.js.map": "/food-cart-frontend/static/js/main.40225ada.chunk.js.map",
     "runtime-main.js": "/food-cart-frontend/static/js/runtime-main.47297a24.js",
     "runtime-main.js.map": "/food-cart-frontend/static/js/runtime-main.47297a24.js.map",
-    "static/js/2.f9ac0c5f.chunk.js": "/food-cart-frontend/static/js/2.f9ac0c5f.chunk.js",
-    "static/js/2.f9ac0c5f.chunk.js.map": "/food-cart-frontend/static/js/2.f9ac0c5f.chunk.js.map",
+    "static/js/2.0cb3c5ad.chunk.js": "/food-cart-frontend/static/js/2.0cb3c5ad.chunk.js",
+    "static/js/2.0cb3c5ad.chunk.js.map": "/food-cart-frontend/static/js/2.0cb3c5ad.chunk.js.map",
     "index.html": "/food-cart-frontend/index.html",
     "static/css/main.bdd93240.chunk.css.map": "/food-cart-frontend/static/css/main.bdd93240.chunk.css.map",
-    "static/js/2.f9ac0c5f.chunk.js.LICENSE.txt": "/food-cart-frontend/static/js/2.f9ac0c5f.chunk.js.LICENSE.txt",
+    "static/js/2.0cb3c5ad.chunk.js.LICENSE.txt": "/food-cart-frontend/static/js/2.0cb3c5ad.chunk.js.LICENSE.txt",
     "static/media/hamburger.47314fc4.jpg": "/food-cart-frontend/static/media/hamburger.47314fc4.jpg",
     "static/media/undraw.8b8e2c53.svg": "/food-cart-frontend/static/media/undraw.8b8e2c53.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.47297a24.js",
-    "static/js/2.f9ac0c5f.chunk.js",
+    "static/js/2.0cb3c5ad.chunk.js",
     "static/css/main.bdd93240.chunk.css",
-    "static/js/main.02d906b3.chunk.js"
+    "static/js/main.40225ada.chunk.js"
   ]
 }
