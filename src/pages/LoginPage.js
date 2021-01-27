@@ -4,31 +4,37 @@ import { Login, useFormState } from '../componentLibrary/login-signup';
 import { Link as RouterLink } from 'react-router-dom';
 
 //TEMP
-import { UserLogin } from '../components/APIFunctions';
+import { UserLogin } from '../components-functions/APIFunctions';
 import { UserContext } from '../context/UserContext';
 
 const LoginPage = () => {
-  const { user, setUser } = useContext(UserContext);
+  const { setUser } = useContext(UserContext);
 
   const formStates = useFormState();
 
   const linkText = "Don't have an account? Sign Up.";
   const linkTo = '/signup';
 
-  const HandleLogin = async () => {
+  const HandleLogin = async (event) => {
+    event.preventDefault();
     if (formStates.Submit()) {
-      console.log('good to go');
-      formStates.setBtnLoading(true);
-      const response = await UserLogin(formStates.email, formStates.password);
+      //the input fields are validated
+      //sending email and password to server
+      formStates.setBtnLoading(true); //Change button to loading
+
+      const response = await UserLogin(formStates.email, formStates.password); //api call
+
       formStates.setBtnLoading(false);
-      console.log(response);
+
       if (response.status === 200) {
+        //fetch successful & data is OK
         setUser(response.data);
       } else {
-        alert('No user');
+        //fetch failed OR data is faulty
+        alert(response.data.message);
       }
     } else {
-      console.log('bad info');
+      //Inputs are not OK
     }
   };
 

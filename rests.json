@@ -1,0 +1,64 @@
+{
+  "_id": { "$oid": "600c74da4a149c29c86a29bf" },
+  "name": "Burger Queen",
+  "description": "Eat like a queen.",
+  "items": [
+    {
+      "_id": { "$oid": "600c74da4a149c29c86a29c0" },
+      "name": "Classic Hamburger",
+      "price": { "$numberInt": "5" },
+      "photoURL": "https://source.unsplash.com/E94j3rMcxlw/900x900",
+      "category": "Main"
+    },
+    {
+      "_id": { "$oid": "600c74da4a149c29c86a29c1" },
+      "name": "Cheeseburger",
+      "price": { "$numberInt": "6" },
+      "photoURL": "https://source.unsplash.com/6XmQV6GccYU/900x900",
+      "category": "Main"
+    },
+    {
+      "_id": { "$oid": "600c74da4a149c29c86a29c2" },
+      "name": "Blackburger",
+      "price": { "$numberInt": "7" },
+      "photoURL": "https://source.unsplash.com/X92WLoaQ1_o/900x900",
+      "category": "Main"
+    },
+    {
+      "_id": { "$oid": "600c74da4a149c29c86a29c3" },
+      "name": "French Fries",
+      "price": { "$numberInt": "2" },
+      "photoURL": "https://source.unsplash.com/1qHyDiaDhOQ/900x900",
+      "category": "Side"
+    },
+    {
+      "_id": { "$oid": "600c74da4a149c29c86a29c4" },
+      "name": "Curly Fries",
+      "price": { "$numberInt": "2" },
+      "photoURL": "https://source.unsplash.com/qdOAjvKsYFQ/900x900",
+      "category": "Side"
+    },
+    {
+      "_id": { "$oid": "600c74da4a149c29c86a29c5" },
+      "name": "Coke",
+      "price": { "$numberInt": "1" },
+      "photoURL": "https://source.unsplash.com/nWCmjC7dmdo/900x900",
+      "category": "Drink"
+    },
+    {
+      "_id": { "$oid": "600c74da4a149c29c86a29c6" },
+      "name": "Mineral Water",
+      "price": { "$numberInt": "1" },
+      "photoURL": "https://source.unsplash.com/cTRfYn1-dHo/900x900",
+      "category": "Drink"
+    },
+    {
+      "_id": { "$oid": "600c74da4a149c29c86a29c7" },
+      "name": "Milkshake",
+      "price": { "$numberInt": "1" },
+      "photoURL": "https://source.unsplash.com/KipUL4tcnmU/900x900",
+      "category": "Drink"
+    }
+  ],
+  "__v": { "$numberInt": "0" }
+}

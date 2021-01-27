@@ -1,30 +1,35 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import { PrivateRoute, NoUserRoute } from './custom-routes';
+
+import { SnackbarProvider } from 'notistack';
 
 import { LoginPage, SignUpPage, Home, Restaurant, Cart } from './pages';
-
-import IfUserThenRedirect from './components/PrivateRoute';
 
 function App() {
   return (
     <Router>
       <Switch>
-        <IfUserThenRedirect exact path="/login">
+        <NoUserRoute exact path="/login">
           <LoginPage />
-        </IfUserThenRedirect>
-        <IfUserThenRedirect exact path="/signup">
+        </NoUserRoute>
+        <NoUserRoute exact path="/signup">
           <SignUpPage />
-        </IfUserThenRedirect>
-        <Route exact path="/">
+        </NoUserRoute>
+        <PrivateRoute exact path="/">
           <Home />
-        </Route>
-        <Route exact path="/cart">
-          <Cart />
-        </Route>
-        <Route exact path="/:restaurant">
-          <Restaurant />
-        </Route>
+        </PrivateRoute>
+        <PrivateRoute exact path="/cart">
+          <SnackbarProvider>
+            <Cart />
+          </SnackbarProvider>
+        </PrivateRoute>
+        <PrivateRoute exact path="/:restaurant">
+          <SnackbarProvider>
+            <Restaurant />
+          </SnackbarProvider>
+        </PrivateRoute>
       </Switch>
     </Router>
   );

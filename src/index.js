@@ -5,6 +5,8 @@ import App from './App';
 import { createMuiTheme, CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import UserProvider from './context/UserContext';
+import CartProvider from './context/CartContext';
+
 const darkTheme = createMuiTheme({
   palette: {
     type: 'dark',
@@ -14,9 +16,9 @@ const darkTheme = createMuiTheme({
       dark: '#bb4d00',
     },
     secondary: {
-      main: '#1976d2',
-      light: '#63a4ff',
-      dark: '#004ba0',
+      main: '#b71c1c',
+      light: '#f05545',
+      dark: '#7f0000',
     },
   },
 });
@@ -25,8 +27,10 @@ ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={darkTheme}>
       <UserProvider>
-        <CssBaseline />
-        <App />
+        <CartProvider>
+          <CssBaseline />
+          <App />
+        </CartProvider>
       </UserProvider>
     </ThemeProvider>
   </React.StrictMode>,

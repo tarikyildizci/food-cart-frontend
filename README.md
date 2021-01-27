@@ -1,13 +1,8 @@
 PROBLEMS:
-Context refreshes on page refresh
-Context is not secure
 
 TODO:
-Implement JWT ? or sessions ?
-Home page, Cart page, ?userPage?
+Add Cart empty
+Add total price
+Add Checkut button
 
-COMPONENT LIBRARY:
-*Default Navbar
-*Different Cards
-*Tables
-*Footer
+After that it is done

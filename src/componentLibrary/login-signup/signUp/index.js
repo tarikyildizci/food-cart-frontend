@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.primary.light,
   },
   linkText: {
-    color: theme.palette.secondary.light,
+    color: theme.palette.info.light,
   },
   form: {
     width: '100%', // Fix IE 11 issue.
@@ -166,6 +166,7 @@ function SignUp({
                 label={field.label}
                 type="text"
                 id={field.label}
+                error={!field.state}
                 value={field.state}
                 onChange={(e) => {
                   field.setState(e.target.value);
@@ -177,8 +178,11 @@ function SignUp({
             className={classes.submit}
             variant="contained"
             color="primary"
+            type="submit"
             fullWidth
-            onClick={handleSubmit}
+            onClick={(e) => {
+              handleSubmit(e);
+            }}
             disabled={btnLoading}
           >
             {btnLoading ? <CircularProgress size={25} /> : 'Sign Up'}
