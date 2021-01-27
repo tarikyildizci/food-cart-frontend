@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/food-cart-frontend/static/css/main.bdd93240.chunk.css",
-    "main.js": "/food-cart-frontend/static/js/main.5c5635c7.chunk.js",
-    "main.js.map": "/food-cart-frontend/static/js/main.5c5635c7.chunk.js.map",
+    "main.js": "/food-cart-frontend/static/js/main.02d906b3.chunk.js",
+    "main.js.map": "/food-cart-frontend/static/js/main.02d906b3.chunk.js.map",
     "runtime-main.js": "/food-cart-frontend/static/js/runtime-main.47297a24.js",
     "runtime-main.js.map": "/food-cart-frontend/static/js/runtime-main.47297a24.js.map",
     "static/js/2.f9ac0c5f.chunk.js": "/food-cart-frontend/static/js/2.f9ac0c5f.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.47297a24.js",
     "static/js/2.f9ac0c5f.chunk.js",
     "static/css/main.bdd93240.chunk.css",
-    "static/js/main.5c5635c7.chunk.js"
+    "static/js/main.02d906b3.chunk.js"
   ]
 }
